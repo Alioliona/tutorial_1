@@ -38,3 +38,6 @@ def astr_num():
 
 if __name__ == '__main__':
     app.run()
+
+def add():
+    pass
