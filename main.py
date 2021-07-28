@@ -40,4 +40,6 @@ if __name__ == '__main__':
     app.run()
 
 def add():
+    'just a useless function'
     pass
+
