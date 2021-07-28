@@ -15,12 +15,12 @@ def gen_users():
     query_params = request.args
     number = query_params.get('number') or ''
 
-    min_number = 1
+    min_number = 3
     default_number = 100
 
     if number.isdigit():
         number = int(number)
-        if number < min_number:
+        if number <= min_number:
             number = default_number
 
     else:
@@ -38,3 +38,8 @@ def astr_num():
 
 if __name__ == '__main__':
     app.run()
+
+def add():
+    'just a useless function'
+    pass
+
